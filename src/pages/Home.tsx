@@ -32,10 +32,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button render={<Link to="/shop" />} size="lg" className="bg-accent hover:bg-accent/90 text-white rounded-full px-10 h-16 text-sm font-bold uppercase tracking-widest shadow-xl shadow-accent/20">
+              <Button nativeButton={false} render={<Link to="/shop" />} size="lg" className="bg-accent hover:bg-accent/90 text-white rounded-full px-10 h-16 text-sm font-bold uppercase tracking-widest shadow-xl shadow-accent/20">
                 Shop Fresh Harvest
               </Button>
-              <Button render={<Link to="/subscription" />} variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-10 h-16 text-sm font-bold uppercase tracking-widest transition-all">
+              <Button nativeButton={false} render={<Link to="/subscription" />} variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-10 h-16 text-sm font-bold uppercase tracking-widest transition-all">
                 Weekly Boxes
               </Button>
             </div>
