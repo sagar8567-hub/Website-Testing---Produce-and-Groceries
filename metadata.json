@@ -1,0 +1,12 @@
+{
+  "name": "The Harvest Market",
+  "description": "Premium local produce and grocery shop delivering fresh, seasonal harvests from farm to table.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "Ecommerce",
+    "Local Delivery",
+    "Subscription Boxes"
+  ]
+}

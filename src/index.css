@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap');
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-primary: #2F5233;
+  --color-primary-foreground: #FAF7F0;
+  --color-secondary: #87A96B;
+  --color-secondary-foreground: #2F5233;
+  --color-background: #FAF7F0;
+  --color-foreground: #1A1A1A;
+  --color-accent: #E63946;
+  --color-accent-foreground: #FAF7F0;
+  --color-charcoal: #1A1A1A;
+  
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+
+  --color-border: #2F52331a;
+  --color-input: #2F52331a;
+  --color-ring: #2F5233;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold tracking-tight text-primary;
+  }
+}
+
+@layer utilities {
+  .editorial-border {
+    @apply border-4 border-white shadow-xl;
+  }
+  
+  .glass-nav {
+    @apply bg-white/50 backdrop-blur-md border-b border-primary/10;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
